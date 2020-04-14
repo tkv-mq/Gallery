@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
 {% block cat %}
+
     <h1>Описание</h1>
+    {% for i in story %}
+    <li>{{ i }}</li>
+    {% endfor %}
+
 {% endblock %}

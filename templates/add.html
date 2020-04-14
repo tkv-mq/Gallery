@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block cat %}
+    <h3>Add photo</h3>
+    <form action="{{ url_for('add_photo') }}" method="POST">
+        <label for="">
+            <input type="text" name="url">
+            <input type="submit" name="Добавить">
+        </label>
+    </form>
+{% endblock %}

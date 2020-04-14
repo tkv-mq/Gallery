@@ -1,11 +1,9 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block cat %}
-    <h1>
-        Galery
-    </h1>
-    <h2>Photos</h2>
-        {% for photo in photos %}
+    <h1>Описание</h1>
+    {% for photo in photos %}
             <div><img src="{{photo}}" alt=""></div>
-        {% endfor %}
+            <div>{{ story }}</div>
+    {% endfor %}
 {% endblock %}

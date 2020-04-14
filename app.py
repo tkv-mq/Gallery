@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     note = open("story.txt", "r+", encoding="utf-8")
-    story = note.read()
+    story = [i for i in note]
     note.close()
     return render_template("home.html", story=story)
 

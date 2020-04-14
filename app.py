@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/gallery")
+@app.route("/")
 def gallery():
     note = open("note.txt", "r+", encoding="utf-8")
     photos = [i for i in note]

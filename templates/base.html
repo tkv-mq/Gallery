@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style> a {
+        text-decoration: none;
+    }
+    </style>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='examstyle.css') }} ">
+    <title>Gallery</title>
 </head>
 <body>
-    <div>
+    <div id="menu">
         <a href="{{ url_for('gallery') }}">Gallery</a>
         <a href="{{ url_for('add') }}">Add photo</a>
-    </div>
+    </div class="content">
     {% block cat %}
     
     {% endblock %}

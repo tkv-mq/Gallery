@@ -5,7 +5,9 @@
         Gallery
     </h1>
     <h2>Photos</h2>
+    <div>
         {% for photo in photos %}
-            <div><img src="{{photo}}" alt=""></div>
+        <div><img src="{{photo}}" alt=""></div>
         {% endfor %}
+    </div>
 {% endblock %}

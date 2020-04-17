@@ -2,12 +2,12 @@
 
 {% block cat %}
     <form action="{{ url_for('add_ok') }}" method="POST">
-        <label for="url">
+        <div>
             <input type="text" name="url" placeholder="Добавитьте URL">
-        </label>
-        <label for="story">
+        </div>
+        <div>
             <input type="text" name="text" placeholder="Добавьте описание">
-        </label>
-        <input type="submit" value="Добавить" id="add">
+        </div>
+        <button>Добавить</button>
     </form>
 {% endblock %}

@@ -29,7 +29,7 @@ a:hover {
 }
 
 .content {
-    height: 90vh;
+    height: 90%;
     width: 90%;
     background: white;
     margin: 1%;
@@ -40,8 +40,8 @@ a:hover {
 img {
     border-radius: 10px;
     border: 1px solid lightgrey;
-    height: 35%;
-    width: 40%;
+    height: 250px;
+    width: 400px;
     margin: 10px;
     padding: 10px;
     transform: scale(1);

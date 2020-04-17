@@ -6,3 +6,11 @@ for i in nums:
     res += i
 
 print(res)
+
+note = open("note.txt", "r+", encoding="utf-8")
+lst = note.read()
+lst = lst.split('\n')
+lst = [i.split(',') for i in lst]
+
+for i, j in lst:
+    print(i, j)

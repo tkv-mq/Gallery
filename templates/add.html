@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 
 {% block cat %}
-    <h3>Add photo</h3>
-    <form action="{{ url_for('add_photo') }}" method="POST">
-        <label for="">
-            <input type="text" name="url" placeholder="url">
-            <input type="text" name="story" placeholder="story">
-            <input type="submit" value="Добавить">
+    <form action="{{ url_for('add_ok') }}" method="POST">
+        <label for="url">
+            <input type="text" name="url" placeholder="Добавитьте URL">
         </label>
+        <label for="story">
+            <input type="text" name="text" placeholder="Добавьте описание">
+        </label>
+        <input type="submit" value="Добавить" id="add">
     </form>
 {% endblock %}

@@ -1,14 +1,78 @@
-#menu {
-    height: 30px;
-    width: 70%;
-    color: white;
-    background-color: #3c3c3c;
-    font-size: 24px;
-    margin: 0 15%;
-    padding: 10px 20px;
-    box-shadow: 10px 5px lightgray;
+body {
+    background: black;
+    padding: 1% 10%;
+    margin: 1%;
 }
 
-.photos {
-    border: 1px solid black;
+#menu {
+    height: 35px;
+    width: 90%;
+    margin: 1%;
+    padding: 1%;
+    background: white;
+    border-radius: 10px;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: white;
+    opacity: 1;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+.content {
+    height: 90vh;
+    width: 90%;
+    background: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    height: 35%;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    transform: scale(1);
+    transition: ease-in-out 1s;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 1s;
+}
+
+h2 {
+    margin-left: 40%;
+}
+
+li {
+    font-size: 24px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+input {
+    border: 2px solid lightgray;
+    border-color: lightslategray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#add:hover {
+    background-color: lightskyblue;
 }

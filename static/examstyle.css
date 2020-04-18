@@ -46,9 +46,12 @@ img {
     padding: 10px;
     transform: scale(1);
     transition: ease-in-out 1s;
+    position: relative;
+    z-index: 1;
 }
 
 img:hover {
+    z-index: 10;
     transform: scale(1.5);
     transition: ease-in-out 1s;
 }
